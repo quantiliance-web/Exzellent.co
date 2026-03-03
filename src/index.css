@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #6C47FF;
+  --color-secondary: #00D4AA;
+  --color-bg: #0A0A0F;
+  --color-surface: #13131A;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #8B8B9E;
+  --color-border: #1E1E2E;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-primary font-sans antialiased;
+  }
+}
+
+@keyframes gradient-text {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-text {
+  background-size: 200% auto;
+  animation: gradient-text 3s linear infinite;
+}
+
+.glass {
+  @apply backdrop-blur-md bg-bg/70 border-b border-border;
+}
+
+.card-glow:hover {
+  box-shadow: 0 0 20px rgba(108, 71, 255, 0.15);
+}
+
+.card-glow-secondary:hover {
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.15);
+}
