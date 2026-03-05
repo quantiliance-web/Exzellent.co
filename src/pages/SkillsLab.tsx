@@ -9,11 +9,11 @@ const SkillsLab = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const skillsCourses = courses.filter(c => c.lab === 'skills');
   
-  const filters = ['All', 'AI', 'Automation', 'Web3', 'Product', 'Data', 'Systems', 'Vibe Coding'];
+  const filters = ['All', 'Course', 'Bootcamp', 'Webinar', 'Micro Course'];
   
   const filteredCourses = activeFilter === 'All' 
     ? skillsCourses 
-    : skillsCourses.filter(c => c.skill === activeFilter);
+    : skillsCourses.filter(c => c.type === activeFilter);
 
   return (
     <div className="pt-24 pb-20">

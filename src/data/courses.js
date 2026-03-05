@@ -8,9 +8,10 @@ export const courses = [
   {
     id: "business-english",
     lab: "language",
+    type: "Course",
     title: "Business English Mastery",
     language: "English",
-    level: "Intermediate",
+    level: "B2",
     duration: "8 weeks",
     enrolled: 1240,
     instructor: "Sarah Jenkins",
@@ -43,9 +44,10 @@ export const courses = [
   {
     id: "conversational-french",
     lab: "language",
+    type: "Micro Course",
     title: "Conversational French",
     language: "French",
-    level: "Beginner",
+    level: "A1",
     duration: "6 weeks",
     enrolled: 850,
     instructor: "Jean-Pierre Blanc",
@@ -74,9 +76,10 @@ export const courses = [
   {
     id: "spanish-professionals",
     lab: "language",
+    type: "Bootcamp",
     title: "Spanish for Professionals",
     language: "Spanish",
-    level: "Advanced",
+    level: "C1",
     duration: "10 weeks",
     enrolled: 620,
     instructor: "Elena Rodriguez",
@@ -101,9 +104,10 @@ export const courses = [
   {
     id: "mandarin-basics",
     lab: "language",
+    type: "Webinar",
     title: "Mandarin Basics",
     language: "Mandarin",
-    level: "Beginner",
+    level: "A1",
     duration: "12 weeks",
     enrolled: 2100,
     instructor: "Wei Chen",
@@ -128,9 +132,10 @@ export const courses = [
   {
     id: "german-grammar",
     lab: "language",
+    type: "Course",
     title: "German Grammar Mastery",
     language: "German",
-    level: "Intermediate",
+    level: "B1",
     duration: "8 weeks",
     enrolled: 940,
     instructor: "Hans Müller",
@@ -155,9 +160,10 @@ export const courses = [
   {
     id: "japanese-script",
     lab: "language",
+    type: "Micro Course",
     title: "Japanese Script & Speak",
     language: "Japanese",
-    level: "Beginner",
+    level: "A2",
     duration: "10 weeks",
     enrolled: 1500,
     instructor: "Yuki Tanaka",
@@ -182,9 +188,10 @@ export const courses = [
   {
     id: "portuguese-fast-track",
     lab: "language",
+    type: "Webinar",
     title: "Portuguese Fast Track",
     language: "Portuguese",
-    level: "Intermediate",
+    level: "B2",
     duration: "6 weeks",
     enrolled: 430,
     instructor: "Ricardo Silva",
@@ -209,9 +216,10 @@ export const courses = [
   {
     id: "arabic-standard",
     lab: "language",
+    type: "Bootcamp",
     title: "Modern Standard Arabic",
     language: "Arabic",
-    level: "Advanced",
+    level: "C2",
     duration: "12 weeks",
     enrolled: 310,
     instructor: "Amira Al-Farsi",
@@ -298,7 +306,7 @@ export const courses = [
   {
     id: "no-code-automation",
     lab: "skills",
-    type: "Course",
+    type: "Micro Course",
     title: "No-Code Automation with Make & Zapier",
     skill: "Automation",
     level: "Intermediate",
@@ -410,7 +418,7 @@ export const courses = [
   {
     id: "vibe-coding",
     lab: "skills",
-    type: "Course",
+    type: "Webinar",
     title: "Vibe Coding: Build Apps with AI",
     skill: "Vibe Coding",
     level: "Beginner",
@@ -550,6 +558,58 @@ export const courses = [
       {
         title: "The European Standard",
         lessons: ["Europass vs Modern EU Formats", "Country-Specific Nuances", "Photo & Personal Info Rules"]
+      }
+    ]
+  },
+  {
+    id: "networking-webinar",
+    lab: "career",
+    type: "Webinar",
+    title: "High-Stakes Networking Webinar",
+    skill: "Networking",
+    level: "Beginner",
+    duration: "2 hours",
+    enrolled: 3500,
+    instructor: "Sarah Connect",
+    price: 0,
+    icon: "🤝",
+    description: "Learn the secrets of effective networking in a 2-hour intensive session. How to approach mentors, recruiters, and industry leaders.",
+    whatYoullLearn: [
+      "The perfect elevator pitch",
+      "How to ask for referrals",
+      "LinkedIn outreach strategies",
+      "Maintaining professional relationships"
+    ],
+    modules: [
+      {
+        title: "Live Session",
+        lessons: ["The Pitch", "The Outreach", "Q&A"]
+      }
+    ]
+  },
+  {
+    id: "salary-micro",
+    lab: "career",
+    type: "Micro Course",
+    title: "Salary Negotiation Micro-Course",
+    skill: "Negotiation",
+    level: "Intermediate",
+    duration: "1 week",
+    enrolled: 1800,
+    instructor: "David Deal",
+    price: 999,
+    icon: "💰",
+    description: "A bite-sized course focused solely on getting you the compensation you deserve. Scripts, strategies, and timing.",
+    whatYoullLearn: [
+      "When to talk about salary",
+      "Researching market rates",
+      "Handling low-ball offers",
+      "Negotiating benefits"
+    ],
+    modules: [
+      {
+        title: "The Negotiation",
+        lessons: ["Preparation", "The Conversation", "Closing the Deal"]
       }
     ]
   }
